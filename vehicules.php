@@ -1,14 +1,9 @@
 <?php
-require_once  __DIR__. '/templates/header.php'
+require_once __DIR__.  '/templates/header.php'
 ?>
 <?php
 require_once  __DIR__. '/lib/vehicule.php'
 ?>
-<?php
-require_once  __DIR__. '/templates/main.php'
-?>
-
-
 
 <div class="row">
     <?php foreach($vehicules as $key => $vehicule){
@@ -18,6 +13,6 @@ require_once  __DIR__. '/templates/main.php'
 
 
 <?php
-require_once  __DIR__. '/templates/footer.php';
+require_once __DIR__. '/templates/footer.php';
 ?>
 
