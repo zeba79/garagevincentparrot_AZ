@@ -5,8 +5,10 @@ require_once  __DIR__. '/templates/header.php'
 require_once  __DIR__. '/lib/vehicule.php'
 ?>
 
-
-<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+<h1>
+<?=WELLCOME_PAGE?> contact !
+</h1>
+<!-- <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
@@ -18,8 +20,12 @@ require_once  __DIR__. '/lib/vehicule.php'
           <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
         </div>
       </div>
-    </div>
+    </div> -->
   
+    <form>
+<label for="nom">Nom : </label>
+      <input type="text">
+    </form>
 
 <?php
 require_once  __DIR__. '/templates/footer.php';

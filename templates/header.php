@@ -23,6 +23,11 @@ $mainMenu = [
 $currentPage = basename($_SERVER["SCRIPT_NAME"]);
 
 ?>
+<?php
+require_once   './config/config.php';
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
