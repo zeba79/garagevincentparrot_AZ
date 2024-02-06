@@ -9,9 +9,25 @@
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
         <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+          <a href="#" class="btn btn-primary btn-lg px-4 me-md-2">Voir nos véhicules d'Occasion</a>
         </div>
       </div>
     </div>
   </div>
+  
+  <div class="col-md-4 my-2 d-flex">
+	<div class="card w-100">
+		<div class="card-body">
+            <p class="card-text">Prix : 5800 €</p>
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+         <a href="#"><img src="/assets/images/logoVParrot.jpg" alt="Logo vincent Parrot" width="350px"></a> 
+        </a>
+			<h5 class="card-title">Opel Corsa 400 ch :</h5>
+			<p class="card-text">Année : 2008</p>
+			<p class="card-text">Carburant :Diesel</p>
+			<p class="card-text">Kilométrage : 172000 km</p>
+			<p class="card-text">Prix : 5800 €</p>
+			<a href=" # " class="btn btn-primary">Voir détails</a>
+		</div>
+    	</div>
+</div>
