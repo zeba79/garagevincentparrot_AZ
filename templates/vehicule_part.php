@@ -1,4 +1,4 @@
-<div class="col-md-4 my-2">
+        <div class="col-md-4 my-2">
             <div class="card">
                     <img src="/uploads/vehicules/<?= $vehicule["image"]?>"
                     class="card-img-top" alt="Logo vincent Parrot" >
@@ -8,7 +8,7 @@
                     <p class="card-text">Carburant : <?= $vehicule["carburant"]?></p>
                     <p class="card-text"> Kilométrage : <?= $vehicule["kilometrage"]?></p>
                     <p class="card-text"> Prix : <?= $vehicule["prix"]?></p>
-                    <a href="#" class="btn btn-primary btn-lg px-4 me-md-2 ">Voir détails</a>
+                    <a href="vehicule.php" class="btn btn-primary btn-lg px-4 me-md-2 ">Voir détails</a>
                 </div>
             </div>
         </div>

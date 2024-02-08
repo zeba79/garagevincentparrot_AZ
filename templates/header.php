@@ -1,24 +1,5 @@
 <?php
-$mainMenu = [
-  "index.php" => [ "title_menu" => "Accueil", "head_title" => "Accueil garage VParrot ",
-  "meta_description" => "Garage Vincent Parrot, de la mécanique à l'entretien..." ],
 
-  "mecanique.php" =>[ "title_menu" => "Mécanique","head_title" => "Mécanique",
-  "meta_description" => "Garage Vincent Parrot, c'est la mécanique générale..." ],
-
-  "carrosserie.php" =>[ "title_menu" => "Carrosserie", "head_title" => "Carrosserie",
-  "meta_description" => "Garage Vincent Parrot, au service de la carrosserie..." ],
-
-  "entretien.php" =>[ "title_menu" => "Entretien", "head_title" => "Entretien",
-  "meta_description" => "Garage Vincent Parrot, confiez-nous votre entretien auto..." ],
-
-  "vehicules.php" =>[ "title_menu" => "Véhicules d'occasions", "head_title" => "Vehicules",
-  "meta_description" => "Garage Vincent Parrot, c'est aussi les véhicules d'occasions..." ],
-
-  "contact.php" =>[ "title_menu" => "Nous contacter", "head_title" => "Contact",
-  "meta_description" => "Garage Vincent Parrot, contacter-nous..." ],
-
-];
 
 $currentPage = basename($_SERVER["SCRIPT_NAME"]);
 
@@ -42,7 +23,7 @@ require_once   './config/config.php';
 </head>
 <body>
 
-<div class="container">
+<div class="col">
       <header class="d-flex flex-wrap align-items-center
       justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
   <div class="col-md-3 mb-2 mb-md-0">
@@ -50,13 +31,18 @@ require_once   './config/config.php';
   </div>
 
     <ul class="nav nav-pills col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <?php foreach ($mainMenu as $key => $menuItem) {?>
+        <?php foreach ($mainMenu as $key => $menuItem) {
+          if(!$menuItem["exclude"]) {
+
+          ?>
           <li class="nav-item"><a href="<?=$key; ?>" class="nav-link px-2
           <?php if($key === $currentPage) { echo "active";}
           // ternaire echo($key === $currentPage) ? "active" : "";
           ?>">
           <?=$menuItem["title_menu"]; ?></a></li>
-          <?php } ?>
+          <?php }
+          }
+          ?>
     </ul>
   <div class="col-md-3 text-end">
         <button type="button" class="btn btn-outline-primary me-2">Login</button>
