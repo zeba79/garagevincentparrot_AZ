@@ -8,7 +8,7 @@
                     <p class="card-text">Carburant : <?= $vehicule["carburant"]?></p>
                     <p class="card-text"> Kilométrage : <?= $vehicule["kilometrage"]?></p>
                     <p class="card-text"> Prix : <?= $vehicule["prix"]?></p>
-                    <a href="vehicule.php" class="btn btn-primary btn-lg px-4 me-md-2 ">Voir détails</a>
+                    <a href="vehicule.php?id=<?=$key?>" class="btn btn-primary btn-lg px-4 me-md-2 ">Voir détails</a>
                 </div>
             </div>
         </div>
