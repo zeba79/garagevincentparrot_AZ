@@ -23,7 +23,7 @@ require_once __DIR__.  '/templates/header.php';
         </a>
       </div>
       <div class="col-lg-6">
-      <h2 class="card-title"><?= htmlentities($vehicule["description"])?></h2>
+      <h2 class="card-title"><?= htmlentities($vehicule["marque"])?></h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi saepe consequatur cumque tempore facilis optio consectetur alias cum commodi dolore, rem culpa explicabo laboriosam? Aperiam voluptate hic, accusamus expedita totam saepe a quo consequatur quidem necessitatibus minus at assumenda quod maxime pariatur asperiores sint suscipit ducimus fugiat itaque tenetur.
       </p>

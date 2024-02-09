@@ -1,2 +1,2 @@
 <?php 
-define("WELLCOME_PAGE", "Bienvenue sur notre page");
+define("_WELLCOME_PAGE_", "Bienvenue sur notre page");
