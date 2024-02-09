@@ -1,14 +1,10 @@
         <?php
 if($vehicule["image"] === null ){
-$imagePath = "/assets/images/defaultcar.jpg";
-
+$imagePath = _ASSETS_IMAGES_."defaultcar.jpg";
 } else {
-    $imagePath = "/uploads/vehicules/".htmlentities($vehicule["image"]);
+    $imagePath = _UPLOADS_IMAGES_.htmlentities($vehicule["image"]);
 }
-
         ?>
-        
-        
         <div class="col-md-3 my-2">
             <div class="card">
                     <img src="<?= $imagePath ?>"

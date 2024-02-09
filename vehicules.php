@@ -1,10 +1,14 @@
 
 
 <?php
+require_once  __DIR__. '/config/config.php';
+require_once  __DIR__. '/lib/pdo.php';
 require_once  __DIR__. '/lib/menu.php';
 require_once __DIR__.  '/templates/header.php';
 
 require_once  __DIR__. '/lib/vehicule.php';
+
+$vehicules = getVehicules($pdo);
 ?>
 
 <div class="row">
