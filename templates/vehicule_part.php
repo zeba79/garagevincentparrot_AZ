@@ -1,6 +1,17 @@
+        <?php
+if($vehicule["image"] === null ){
+$imagePath = "/assets/images/defaultcar.jpg";
+
+} else {
+    $imagePath = "/uploads/vehicules/".htmlentities($vehicule["image"]);
+}
+
+        ?>
+        
+        
         <div class="col-md-3 my-2">
             <div class="card">
-                    <img src="/uploads/vehicules/<?= $vehicule["image"]?>"
+                    <img src="<?= $imagePath ?>"
                     class="card-img-top" alt="Logo vincent Parrot" >
                 <div class="card-body">
                     <h2 class="card-title"><?= $vehicule["marque"]?></h2>
