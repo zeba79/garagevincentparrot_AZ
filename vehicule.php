@@ -3,17 +3,30 @@ require_once  __DIR__. '/config/config.php';
 require_once  __DIR__. '/lib/pdo.php';
 require_once  __DIR__. '/lib/vehicule.php';
 require_once  __DIR__. '/lib/menu.php';
+
+$error = false;
+
+if (isset($_GET["id"])) {
+  $id = $_GET["id"];
+  $vehicule = getVehiculeById($pdo, $id);
+
+      if (!$vehicule) {
+
+       $error = true;
+        $mainMenu["vehicule.php"] = ["title_menu" =>"article introuvable", "meta_description" => "article introuvable" ,"head_title" => "article introuvable"];
+      }
+} else {
+  $error = true;
+  $mainMenu["vehicule.php"] = ["title_menu" =>"article introuvable", "meta_description" => "article introuvable" ,"head_title" => "article introuvable", "exclude" => true];
+}
+
+$imagePath = getVehiculeImage($vehicule["image"]);
+
 require_once __DIR__.  '/templates/header.php';
 
-$id = $_GET["id"];
-$vehicule = getVehiculeById($pdo, $id);
-
-if($vehicule["image"] === null ){
-  $imagePath = _ASSETS_IMAGES_DEFAULT_."defaultcar.jpg";
-  } else {
-      $imagePath = _UPLOADS_IMAGES_.htmlentities($vehicule["image"]);
-  }
 ?>
+
+<?php if(!$error){ ?>
 
 <div class="container col-xxl-8 px-4 py-5">
 <div class="card">
@@ -41,7 +54,9 @@ if($vehicule["image"] === null ){
     </div>
   </div>
 
-  
+  <?php } else {?>
+  <h1> L'article est introuvable</h1>
+    <?php }?>
 <?php
 require_once __DIR__. '/templates/footer.php';
 ?>

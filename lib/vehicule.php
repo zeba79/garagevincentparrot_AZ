@@ -27,3 +27,13 @@ function getVehiculeById(PDO $pdo, int $id): array|bool
     return $vehicule;
 }
 
+
+function getVehiculeImage( string|null $image ): string
+{
+
+    if($image === null ){
+       return _ASSETS_IMAGES_DEFAULT_."defaultcar.jpg";
+        } else {
+           return _UPLOADS_IMAGES_.htmlentities($image);
+        }
+}
