@@ -21,4 +21,7 @@ $mainMenu = [
   "vehicule.php" =>[ "title_menu" => " Véhicule", "head_title" => "vehicule",
   "meta_description" => "Véhicule...", "exclude" => true ],
 
+  "login.php" =>[ "title_menu" => " Connexion", "head_title" => "Connexion",
+  "meta_description" => "Connectez-vous", "exclude" => true ],
+
 ];

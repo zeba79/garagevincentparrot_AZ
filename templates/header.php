@@ -42,8 +42,8 @@ require_once   './config/config.php';
           ?>
     </ul>
   <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <a href="login.php" class="btn btn-outline-primary me-2">Connexion</a>
+        <a href="#" class="btn btn-primary">Deconnexion</a>
   </div>
 </div>
 </header>
