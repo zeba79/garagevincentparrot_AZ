@@ -2,11 +2,17 @@
 require_once  __DIR__. '/config/config.php';
 require_once  __DIR__. '/lib/pdo.php';
 require_once  __DIR__. '/lib/vehicule.php';
-
-
 require_once  __DIR__. '/lib/menu.php';
 require_once __DIR__.  '/templates/header.php';
-$vehicules = getVehicules($pdo);
+
+$id = $_GET["id"];
+$vehicule = getVehiculeById($pdo, $id);
+
+if($vehicule["image"] === null ){
+  $imagePath = _ASSETS_IMAGES_DEFAULT_."defaultcar.jpg";
+  } else {
+      $imagePath = _UPLOADS_IMAGES_.htmlentities($vehicule["image"]);
+  }
 ?>
 
 <div class="container col-xxl-8 px-4 py-5">
@@ -14,7 +20,7 @@ $vehicules = getVehicules($pdo);
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <a href="index.php">
-          <img src="/uploads/vehicules/<?= htmlentities($vehicule["image"])?>"  class="d-block mx-lg-auto img-fluid"
+          <img src= "<?=$imagePath?>"  class="d-block mx-lg-auto img-fluid"
           alt="V Parrot" width="700" height="500" loading="lazy">
         </a>
       </div>

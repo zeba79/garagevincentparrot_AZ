@@ -15,3 +15,15 @@ if($limit){
     $vehicules = $query->fetchAll(PDO::FETCH_ASSOC);
     return $vehicules;
 }
+
+function getVehiculeById(PDO $pdo, int $id): array|bool
+{
+    $sql = "SELECT * FROM vehicules WHERE id = :id";
+
+    $query = $pdo->prepare($sql);
+    $query->bindValue(":id", $id, PDO::PARAM_INT);
+    $query->execute();
+    $vehicule = $query->fetch(PDO::FETCH_ASSOC);
+    return $vehicule;
+}
+

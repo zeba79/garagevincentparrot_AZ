@@ -17,5 +17,8 @@ $mainMenu = [
 
   "contact.php" =>[ "title_menu" => "Nous contacter", "head_title" => "Contact",
   "meta_description" => "Garage Vincent Parrot, contacter-nous..." ],
+  
+  "vehicule.php" =>[ "title_menu" => " Véhicule", "head_title" => "vehicule",
+  "meta_description" => "Véhicule...", "exclude" => true ],
 
 ];

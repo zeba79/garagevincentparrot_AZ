@@ -1,9 +1,7 @@
 <?php
-
-
 $currentPage = basename($_SERVER["SCRIPT_NAME"]);
-
 ?>
+
 <?php
 require_once   './config/config.php';
 ?>
