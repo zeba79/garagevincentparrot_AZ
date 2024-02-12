@@ -3,6 +3,7 @@
 <?php
 require_once  __DIR__. '/config/config.php';
 require_once  __DIR__. '/lib/pdo.php';
+require_once  __DIR__. '/lib/vehicule.php';
 require_once  __DIR__. '/lib/menu.php';
 require_once __DIR__.  '/templates/header.php';
 

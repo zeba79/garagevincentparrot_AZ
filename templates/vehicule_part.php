@@ -1,6 +1,6 @@
         <?php
 if($vehicule["image"] === null ){
-$imagePath = _ASSETS_IMAGES_."defaultcar.jpg";
+$imagePath = _ASSETS_IMAGES_DEFAULT_."defaultcar.jpg";
 } else {
     $imagePath = _UPLOADS_IMAGES_.htmlentities($vehicule["image"]);
 }
@@ -8,13 +8,13 @@ $imagePath = _ASSETS_IMAGES_."defaultcar.jpg";
         <div class="col-md-3 my-2">
             <div class="card">
                     <img src="<?= $imagePath ?>"
-                    class="card-img-top" alt="Logo vincent Parrot" >
+                    class="card-img-top" alt="Logo Vincent Parrot" >
                 <div class="card-body">
                     <h2 class="card-title"><?= $vehicule["marque"]?></h2>
-                    <p class="card-text">Année : <?= $vehicule["annee"]?></p>
-                    <p class="card-text">Carburant : <?= $vehicule["carburant"]?></p>
-                    <p class="card-text"> Kilométrage : <?= $vehicule["kilometrage"]?></p>
-                    <p class="card-text"> Prix : <?= $vehicule["prix"]?></p>
+                    <p class="card-text">Année : <?= htmlentities($vehicule["annee"])?></p>
+                    <p class="card-text">Carburant : <?= htmlentities($vehicule["carburant"])?></p>
+                    <p class="card-text"> Kilométrage : <?= htmlentities($vehicule["kilometrage"])?></p>
+                    <p class="card-text"> Prix : <?= htmlentities($vehicule["prix"])?></p>
                     <a href="vehicule.php?id=<?=$key?>" class="btn btn-primary btn-lg px-4 me-md-2 ">Voir détails</a>
                 </div>
             </div>

@@ -3,12 +3,10 @@ require_once  __DIR__. '/config/config.php';
 require_once  __DIR__. '/lib/pdo.php';
 require_once  __DIR__. '/lib/vehicule.php';
 
-$vehicule = getVehicules($pdo);
 
 require_once  __DIR__. '/lib/menu.php';
-
 require_once __DIR__.  '/templates/header.php';
-
+$vehicules = getVehicules($pdo);
 ?>
 
 <div class="container col-xxl-8 px-4 py-5">
@@ -17,7 +15,7 @@ require_once __DIR__.  '/templates/header.php';
       <div class="col-10 col-sm-8 col-lg-6">
         <a href="index.php">
           <img src="/uploads/vehicules/<?= htmlentities($vehicule["image"])?>"  class="d-block mx-lg-auto img-fluid"
-          alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          alt="V Parrot" width="700" height="500" loading="lazy">
         </a>
       </div>
       <div class="col-lg-6">

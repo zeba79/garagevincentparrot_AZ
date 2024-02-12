@@ -7,10 +7,8 @@ require_once  __DIR__. '/lib/menu.php';
 require_once  __DIR__. '/templates/header.php';
 require_once  __DIR__. '/templates/main.php';
 
-$vehicules = getVehicules($pdo);
+$vehicules = getVehicules($pdo, _HOME_VEHICULES_LIMIT_);
 ?>
-
-
 
 <div class="row">
     <?php foreach($vehicules as $key => $vehicule){
