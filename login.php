@@ -11,12 +11,15 @@
         $email = $_POST["email"];
         $password = $_POST["password"];
         $user = userLoginAndPasswordVefify($pdo, $email, $password);
-     
-        // var_dump($user);
+
+        if($user){
+            $_SESSION["user"] = $user;
         if ($user["role"] === "user") {
           header("location: index.php");
         } elseif($user["role"] === "admin"){
             header("location: admin/index.php");
+
+        }
         } else {
             $errors[] = "Email ou mot de passe incorrect";
         }
