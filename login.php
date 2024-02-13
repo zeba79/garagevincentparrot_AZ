@@ -5,12 +5,21 @@
     require_once __DIR__.  '/lib/menu.php';
     require_once __DIR__.  '/templates/header.php';
  
+
+    $errors = [];
     if(isset($_POST["loginUser"])){
         $email = $_POST["email"];
         $password = $_POST["password"];
         $user = userLoginAndPasswordVefify($pdo, $email, $password);
-        var_dump($user);
-
+     
+        // var_dump($user);
+        if ($user["role"] === "user") {
+          header("location: index.php");
+        } elseif($user["role"] === "admin"){
+            header("location: admin/index.php");
+        } else {
+            $errors[] = "Email ou mot de passe incorrect";
+        }
         
     }
 
@@ -21,6 +30,13 @@
 
 ?>
 <h1 class="mx-5"> LogIn</h1>
+
+<?php
+foreach ($errors as $error) { ?>
+ <div class="alert alert-danger mx-5">
+    <?=$error?>
+ </div>
+<?php }?>
 
 <form action="" method="post">
 <div class="mb-3 mx-5">
