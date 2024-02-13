@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__.  '/config/config.php';
+    require_once __DIR__.  '/lib/session.php';
     require_once __DIR__.  '/lib/pdo.php';
     require_once __DIR__.  '/lib/user.php';
     require_once __DIR__.  '/lib/menu.php';
@@ -13,12 +14,13 @@
         $user = userLoginAndPasswordVefify($pdo, $email, $password);
 
         if($user){
+            session_regenerate_id(true);
             $_SESSION["user"] = $user;
         if ($user["role"] === "user") {
           header("location: index.php");
         } elseif($user["role"] === "admin"){
             header("location: admin/index.php");
-
+var_dump(session_regenerate_id());
         }
         } else {
             $errors[] = "Email ou mot de passe incorrect";

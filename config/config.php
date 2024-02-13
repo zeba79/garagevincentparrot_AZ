@@ -7,3 +7,4 @@ define("_DB_PASSWORD_", "");
 define("_ASSETS_IMAGES_DEFAULT_", "/assets/images/");
 define("_UPLOADS_IMAGES_", "/uploads/vehicules/");
 define("_HOME_VEHICULES_LIMIT_", 4);
+define("_DOMAIN_SESSION_", ".localhost.local");
