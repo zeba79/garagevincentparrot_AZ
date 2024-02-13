@@ -1,7 +1,7 @@
 <?php
+require_once __DIR__.  '/config/config.php';
 require_once  __DIR__. '/lib/menu.php';
 require_once __DIR__.  '/templates/header.php';
-
 require_once  __DIR__. '/lib/vehicule.php';
 ?>
 

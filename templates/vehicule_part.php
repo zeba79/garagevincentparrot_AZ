@@ -1,7 +1,7 @@
 <?php
 $imagePath = getVehiculeImage($vehicule["image"])
 ?>
-        <div class="col-md-3 my-2">
+        <div class="col-md-3 my-2 py-3">
             <div class="card">
                     <img src="<?= $imagePath ?>"
                     class="card-img-top" alt="Logo Vincent Parrot" >
