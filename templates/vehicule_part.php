@@ -9,8 +9,8 @@ $imagePath = getVehiculeImage($vehicule["image"])
                     <h2 class="card-title"><?= $vehicule["marque"]?></h2>
                     <p class="card-text">Année : <?= htmlentities($vehicule["annee"])?></p>
                     <p class="card-text">Carburant : <?= htmlentities($vehicule["carburant"])?></p>
-                    <p class="card-text"> Kilométrage : <?= htmlentities($vehicule["kilometrage"])?></p>
-                    <p class="card-text"> Prix : <?= htmlentities($vehicule["prix"])?></p>
+                    <p class="card-text"> Kilométrage : <?= htmlentities($vehicule["kilometrage"])?> Km</p>
+                    <p class="card-text"> Prix : <?= htmlentities($vehicule["prix"])?> €</p>
                     <a href="vehicule.php?id=<?=$vehicule["id"]?>"
                     class="btn btn-primary btn-lg px-4 me-md-2 ">Voir détails</a>
                 </div>

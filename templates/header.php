@@ -47,7 +47,7 @@ require_once  __DIR__. '/../lib/session.php';
   // si utilisateur connecté, on affiche Deconnexion, sinon on affiche Connexion
   if (isset($_SESSION["user"])) { ?>
     <a href="logout.php" class="btn btn-primary">Deconnexion</a>
-    <?php } else {?>
+     <?php } else {?>
       <a href="login.php" class="btn btn-outline-primary me-2">Connexion</a>
     <?php } ?>
   </div>

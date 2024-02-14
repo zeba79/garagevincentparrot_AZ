@@ -10,3 +10,13 @@
 // ]);
 
 session_start();
+
+function adminAccess(){
+    if (!isset($_SESSION["user"])) {
+        // rediriger user vers la page de connexion
+        header('location: ../login.php');
+      } elseif ($_SESSION["user"]["role"] != "admin"){
+        // rediriger user vers accueil
+        header('location: ../index.php');
+      }
+}

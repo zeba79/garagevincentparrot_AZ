@@ -44,8 +44,8 @@ require_once __DIR__.  '/templates/header.php';
       </p>
                     <p class="card-text">Année : <?= htmlentities($vehicule["annee"])?></p>
                     <p class="card-text">Carburant : <?= htmlentities($vehicule["carburant"])?></p>
-                    <p class="card-text"> Kilométrage : <?= htmlentities($vehicule["kilometrage"])?></p>
-                    <p class="card-text"> Prix : <?= htmlentities($vehicule["prix"])?></p>
+                    <p class="card-text"> Kilométrage : <?= htmlentities($vehicule["kilometrage"])?> Km</p>
+                    <p class="card-text"> Prix : <?= htmlentities($vehicule["prix"])?> €</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <a href="vehicules.php" class="btn btn-primary btn-lg px-4 me-md-2">Voir nos véhicules d'Occasion</a>
 </div>

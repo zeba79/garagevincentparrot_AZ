@@ -20,7 +20,6 @@
           header("location: index.php");
         } elseif($user["role"] === "admin"){
             header("location: admin/index.php");
-var_dump(session_regenerate_id());
         }
         } else {
             $errors[] = "Email ou mot de passe incorrect";
