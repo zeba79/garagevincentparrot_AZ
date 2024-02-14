@@ -34,7 +34,7 @@ adminAccess();
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link text-white">
+        <a href="articles.php" class="nav-link text-white">
         <i class="bi bi-car-front bi pe-none me-2"></i>
           Véhicules
         </a>
