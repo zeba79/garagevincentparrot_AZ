@@ -28,13 +28,13 @@ adminAccess();
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
+        <a href="index.php" class="nav-link active" aria-current="page">
         <i class="bi bi-car-front bi pe-none me-2"></i>
           Home
         </a>
       </li>
       <li>
-        <a href="articles.php" class="nav-link text-white">
+        <a href="vehicules.php" class="nav-link text-white">
         <i class="bi bi-car-front bi pe-none me-2"></i>
           Véhicules
         </a>
@@ -48,11 +48,11 @@ adminAccess();
         <strong>mdo</strong>
       </a>
       <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Nouveau...</a></li>
+        <li><a class="dropdown-item" href="#">Règlages</a></li>
         <li><a class="dropdown-item" href="#">Profile</a></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
+        <li><a class="dropdown-item" href="../../login.php">Sign out</a></li>
       </ul>
     </div>
   </div>
