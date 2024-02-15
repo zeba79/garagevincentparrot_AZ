@@ -12,3 +12,4 @@ function userLoginAndPasswordVefify(PDO $pdo, string $email, string $password): 
         return false;
     }
   }
+

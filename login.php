@@ -26,10 +26,10 @@
         }
         
     }
-
-// $query = $pdo->prepare("INSERT INTO users (email, password) VALUES (:email,:password)");
-// $query->bindValue(":email", "user3@user.fr", PDO::PARAM_STR);
-// $query->bindValue(":password", password_hash('user3', PASSWORD_BCRYPT ));
+// // Requette d'insertion utilisateur dans la BDD
+// $query = $pdo->prepare("INSERT INTO users (email, password) VALUES (:email, :password)");
+// $query->bindValue(":email", "zoulou@zoulou.fr", PDO::PARAM_STR);
+// $query->bindValue(":password", password_hash('zoulou', PASSWORD_BCRYPT ));
 // $query->execute();
 
 ?>

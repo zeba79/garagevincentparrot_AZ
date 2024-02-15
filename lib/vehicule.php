@@ -4,7 +4,7 @@
 // recupérer tous les véhicules dans la BDD avec tri decroissant
 function getVehicules(PDO $pdo, int $limit = null,  int $page = null): array
 {
-    $sql = "SELECT * FROM vehicules ORDER BY id DESC";
+    $sql = "SELECT * FROM vehicules ORDER BY id";
 if($limit && !$page){
     $sql .= " LIMIT :limit";
 }
