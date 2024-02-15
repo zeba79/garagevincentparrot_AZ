@@ -24,4 +24,7 @@ $mainMenu = [
   "login.php" =>[ "title_menu" => " Connexion", "head_title" => "Connexion",
   "meta_description" => "Connectez-vous", "exclude" => true ],
 
+  "register.php" =>[ "title_menu" => " Formulaire d'inscription", "head_title" => "Formulaire d'inscription",
+  "meta_description" => "Connectez-vous", "exclude" => true ],
+
 ];
