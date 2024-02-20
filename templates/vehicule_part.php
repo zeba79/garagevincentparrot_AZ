@@ -12,7 +12,7 @@ $imagePath = getVehiculeImage($vehicule["image"])
                     <p class="card-text"> Kilométrage : <?= htmlentities($vehicule["kilometrage"])?> Km</p>
                     <p class="card-text"> Prix : <?= htmlentities($vehicule["prix"])?> €</p>
                     <a href="vehicule.php?id=<?=$vehicule["id"]?>"
-                    class="btn btn-primary btn-lg px-4 me-md-2 ">Voir détails</a>
+                    class="btn parrotbtn btn-lg px-4 me-md-2 ">Voir détails</a>
                 </div>
             </div>
         </div>

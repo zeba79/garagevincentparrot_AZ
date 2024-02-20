@@ -18,6 +18,7 @@ require_once  __DIR__. '/../lib/session.php';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
      crossorigin="anonymous">
+     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
@@ -32,8 +33,8 @@ require_once  __DIR__. '/../lib/session.php';
         <?php foreach ($mainMenu as $key => $menuItem) {
           if( !array_key_exists("exclude", $menuItem)){
           ?>
-          <li class="nav-item"><a href="<?=$key; ?>" class="nav-link px-2
-          <?php if($key === $currentPage) { echo "active";}
+          <li class="nav-item"><a href="<?=$key; ?>" class="nav-link px-2 parrot-color 
+          <?php if($key === $currentPage) { echo "parrotbtn";}
           // ternaire echo($key === $currentPage) ? "active" : "";
           ?>">
           <?= htmlentities($menuItem["title_menu"]); ?></a></li>
@@ -46,9 +47,9 @@ require_once  __DIR__. '/../lib/session.php';
   <?php
   // si utilisateur connecté, on affiche Deconnexion, sinon on affiche Connexion
   if (isset($_SESSION["user"])) { ?>
-    <a href="logout.php" class="btn btn-primary">Deconnexion</a>
+    <a href="logout.php" class=" btn parrot-color btn parrotbtn">Deconnexion</a>
      <?php } else {?>
-      <a href="login.php" class="btn btn-outline-primary me-2">Connexion</a>
+      <a href="login.php" class="btn parrot-color parrotbtn me-2">Connexion</a>
     <?php } ?>
   </div>
 </div>

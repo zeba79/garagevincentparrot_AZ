@@ -51,7 +51,7 @@ foreach ($errors as $error) { ?>
     <label for="password" class="form-label">Mot de passe</label>
     <input type="password" name="password" id="password" class="form-control">
 </div>
-<input type="submit" value="Connexion" name="loginUser" class="btn btn-primary mx-5">
+<input type="submit" value="Connexion" name="loginUser" class="btn parrotbtn mx-5">
 </form>
 <?php
     require_once __DIR__."/templates/footer.php";

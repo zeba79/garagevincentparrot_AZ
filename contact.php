@@ -16,8 +16,8 @@ require_once  __DIR__. '/templates/header.php';
         <textarea type="textarea" name="message" id="message" class="form-control"></textarea>
     </div>
     
-    <input type="submit" value="Envoyer" name="messageContact" class="btn btn-primary mx-5">
-    <a href="register.php " class="nav-item btn btn-primary mx-3 ">inscrivez-vous</a>
+    <input type="submit" value="Envoyer" name="messageContact" class="btn parrotbtn mx-5">
+    <a href="register.php " class="nav-item btn parrotbtn mx-3 ">inscrivez-vous</a>
 </form>
 
 <?php
